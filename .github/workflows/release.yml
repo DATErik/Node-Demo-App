@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: docker build . -t daterik/nest-demo-app
+    - run: docker build . -t datdockererik/nest-demo-app
     - run: echo "${{secrets.DOCKERHUB_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password-stdin
-    - run: docker push daterik/nest-demo-app
+    - run: docker push datdockererik/nest-demo-app
    
